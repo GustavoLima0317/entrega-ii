@@ -1,0 +1,63 @@
+/* Design System - Variáveis CSS */
+:root {
+  /* Paleta (8+ cores) */
+  --cor-primaria-500: #2563eb;
+  --cor-primaria-600: #1d4ed8;
+  --cor-secundaria-500: #0ea5e9;
+  --cor-acao-500: #22c55e;
+  --cor-erro-500: #ef4444;
+  --cor-aviso-500: #f59e0b;
+  --cor-info-500: #3b82f6;
+  --cor-neutra-900: #0f172a;
+  --cor-neutra-700: #334155;
+  --cor-neutra-500: #64748b;
+  --cor-neutra-300: #cbd5e1;
+  --cor-neutra-100: #f1f5f9;
+  --white: #ffffff;
+  --black: #000000;
+
+  /* Tipografia (5+ tamanhos) */
+  --font-family-base: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, 'Helvetica Neue', Arial, 'Noto Sans', 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji', sans-serif;
+  --fs-900: clamp(2.25rem, 1.6rem + 2vw, 3rem);  /* h1 */
+  --fs-800: clamp(1.75rem, 1.3rem + 1.2vw, 2.25rem); /* h2 */
+  --fs-700: 1.5rem;  /* h3 */
+  --fs-600: 1.25rem; /* h4 */
+  --fs-500: 1.125rem; /* h5 */
+  --fs-400: 1rem;   /* body */
+  --fs-300: 0.875rem; /* legenda */
+
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semibold: 600;
+  --fw-bold: 700;
+
+  /* Espaçamentos (escala modular 8px) */
+  --sp-1: 8px;
+  --sp-2: 16px;
+  --sp-3: 24px;
+  --sp-4: 32px;
+  --sp-5: 48px;
+  --sp-6: 64px;
+
+  /* Raios, sombras */
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --shadow-sm: 0 2px 8px rgba(2, 6, 23, 0.08);
+  --shadow-md: 0 8px 24px rgba(2, 6, 23, 0.10);
+  --shadow-lg: 0 16px 48px rgba(2, 6, 23, 0.12);
+
+  /* Conteúdo */
+  --container: 1200px;
+
+  /* Z-index */
+  --z-header: 1000;
+  --z-dropdown: 1100;
+  --z-modal: 1200;
+  --z-toast: 1300;
+}
+
+/* Preferências do usuário */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
